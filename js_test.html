@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Testing</title>
+
+   
+
     <style>
         button {
             font-family: "Helvetica neue", Helvetica, sans-serif;
@@ -19,6 +22,19 @@
             cursor: pointer;
         }
     </style>
+
+    <script>
+        const button = document.queryselector("button");
+
+        button.addEventListener("click", updateName);
+
+        function updateName() {
+            const name = prompt("Enter a new name");
+            button.textContent = `Player 1: ${name}`;
+        }
+
+    </script>
+    
 </head>
 <body>
     <button>Player 1: Chris</button>
