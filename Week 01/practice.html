@@ -1,0 +1,32 @@
+<!-- Welcome to the JavaScript parctice station.
+We will be doing all our javascript daily practices here. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let Us Practice And Get Better</title>
+</head>
+<body>
+    <h1> JavaScript Operators</h1>
+    <h2>The Delete Operator</h2>
+    <p id="about"></p>
+
+    <script>
+        const info = {
+            name:"Ezra Taft Brigham Essien",
+            age: 200,
+            month: "January",
+            phone: "Iphone 11",
+            occupation: "Instructor"
+        } 
+
+        delete info.age;
+
+        document.getElementById("about").innerHTML = info.name + " is " + info.age + " years old.";
+        document.getElementById("about").innerHTML = ("phone" in info)
+    </script>
+</body>
+</html>
+
