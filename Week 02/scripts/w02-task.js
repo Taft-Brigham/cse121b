@@ -30,7 +30,7 @@ imageElement.setAttribute(`alt`, `profile image of ${fullName}`)
 
 /* Step 5 - Array */
 
-// Creating avriable that stores an array of food
+// Creating a variable that stores an array of food
 let favFood = [
     "Jollof Rice",
     "Waakye",
