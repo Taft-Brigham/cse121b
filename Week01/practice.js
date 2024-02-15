@@ -5,3 +5,10 @@ if (iceCream === "chocolate"){
     alert("Awww, but chocolate is my favorite...")
 }
 console.log()
+
+
+const names = ['ed', 'john','Maria', 'Eliza', 'Harry', 'Potter' ];
+
+for (name of names){
+    console.log(name);
+}
