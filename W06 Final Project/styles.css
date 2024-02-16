@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+
+#quote-container {
+  background-color: rgba(255, 255, 255, 0.68);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#quote-heading {
+  font-size: 24px;
+  font-weight: bold;
+  font-family:  Times, serif; 
+  font-style: italic; 
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+#quote-wrapper {
+  margin-bottom: 20px;
+}
+
+#quote-text {
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+}
+
+#author-text {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+/*styles for button styling and hover effects */
+button {
+  background-color: #36b4a8;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s; /*transition for smooth hover effect */
+}
+
+button:hover {
+  background-color: #2f686d; /* Change background color on hover */
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 600px) {
+  #quote-container {
+    padding: 10px;
+    width: 90%;
+  }
+  #quote-heading {
+    font-size: 20px;
+  }
+  #quote-text {
+    font-size: 16px;
+  }
+  #author-text {
+    font-size: 14px;
+  }
+  #buttons {
+    flex-direction: column;
+  }
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin: 4px 0;
+  }
+}
